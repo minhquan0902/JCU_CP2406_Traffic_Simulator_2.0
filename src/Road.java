@@ -88,20 +88,20 @@ public class Road extends JPanel{
         g.setColor(signColor);
         if(getOrientation().equals("horizontal")) {
             if (getTrafficDirection().equals("east")) {
-                g.fillOval(roadXPos + numOfSegments * 25 - 10 - 50, roadYPos - 20, 10, 20);
+                g.fillOval(roadXPos + numOfSegments * 25 - 10 - 50, roadYPos - 20, 20, 20);
                 g.setColor(Color.black);
-                g.drawOval(roadXPos + numOfSegments * 25 - 10 - 50, roadYPos - 20, 10, 20);
+                g.drawOval(roadXPos + numOfSegments * 25 - 10 - 50, roadYPos - 20, 20, 20);
             } else {
-                g.fillOval(roadXPos + 50, roadYPos - 20, 10, 20);
+                g.fillOval(roadXPos + 50, roadYPos - 20, 20, 20);
                 g.setColor(Color.black);
-                g.drawOval(roadXPos + 50, roadYPos - 20, 10, 20);
+                g.drawOval(roadXPos + 50, roadYPos - 20, 20, 20);
             }
         }
         else{
             if (getTrafficDirection().equals("south")) {
-                g.fillOval(roadYPos - 20, roadXPos + numOfSegments * 25 - 10 - 50, 20, 10);
+                g.fillOval(roadYPos - 20, roadXPos + numOfSegments * 25 - 10 - 50, 20, 20);
                 g.setColor(Color.black);
-                g.drawOval(roadYPos - 20, roadXPos + numOfSegments * 25 - 10 - 50, 20, 10);
+                g.drawOval(roadYPos - 20, roadXPos + numOfSegments * 25 - 10 - 50, 20, 20);
             }
             else{
                 g.fillOval(roadYPos - 20, roadXPos + 40, 20, 10);
